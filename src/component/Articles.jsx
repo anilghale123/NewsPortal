@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 const Articles = () => {
     const apiKey = process.env.REACT_APP_NEWS_API_KEY;  // Assuming you have set it up on Vercel
 
-    const newsApi = `https://newsapi.org/v2/everything?q=tesla&from=2024-03-18&sortBy=publishedAt`;
+    const newsApi = `https://newsapi.org/v2/everything?q=tesla&from=2024-03-18&sortBy=publishedAt&apiKey=${apiKey}`;
   
     const [articles, setArticles] = useState([]);
     const [isLoading, setIsLoading] = useState(false); 
